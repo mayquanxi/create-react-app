@@ -1,8 +1,10 @@
 pipeline {
 	agent {
-		docker 'node:13'
-		label 'akali'
-		args '-p 3000:3000'
+		docker { 
+			image 'node:13'
+			label 'akali'
+			args '-p 3000:3000'
+		}
 	}
 	stages {
 		stage('Build') {
