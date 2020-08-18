@@ -17,8 +17,7 @@ pipeline {
 			steps {
 				echo "Test my app"
 				sh 'cd react-app'
-				sh 'npm install'
-				sh 'npm start & sleep 10'
+				sh 'yarn start & sleep 20'
 				input message: 'Click process to continue or Not'
 			}
 		}
