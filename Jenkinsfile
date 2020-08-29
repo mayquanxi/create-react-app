@@ -9,7 +9,7 @@ pipeline {
 	stages {
 		stage('Build') {
 			steps {
-				echo "create  my apps from create-react-app"
+				echo "create  my apps from create-react-app"  //create new app from create-react-app
 				sh 'npx create-react-app react-app'
 			}
 		}
